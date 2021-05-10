@@ -42,3 +42,134 @@ header .logo h2{
 main section.banner .carrossel img{
     width: 100%;
 }
+
+main.section.banner .container{
+position:relative;
+}
+
+main section.banner .container .setas{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /*alinhamento horizontal */
+    align-items:center; /*alinhamento vertical*/
+
+}
+
+main section.banner .container .setas a {
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    background-color:rgba(128,128,128,0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+
+main section.banner{
+    padding:50px 0;
+
+}
+main section.projects .container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+main section.projects .container article {
+    width:450px;
+    max-width: 100%;
+    background-color: #EEEE;
+    color: #8888;
+}
+
+main section.projects .container article .thumb{
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.projects .container article .info{
+    padding: 20px;
+
+}
+
+main section.projects .container article .info .price-tag{
+display: flex;
+justify-content: space-between;
+}
+
+main section.projects .container article .info .price{
+font-size: 30px;
+margin: 0;
+}
+
+main section.projects .container article .info .tag{
+    padding: 5px 10 px;
+    background-color: gray;
+    color:#fff;
+    margin:0;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+main section.projects .container article .info .tag-new{
+    background-color: #51D275;
+}
+main section.projects .container article .info .tag-new{
+    background-color: #DC9730;
+}
+
+
+main section.projects .container article .info .tag-sale{
+    background-color: #DC9730;
+}
+
+
+footer {
+    background-color: #333333;
+    color:#ffffff;
+    padding: 50px;
+    display:flex;
+    justify-content: space-around;
+}
+
+footer a:any-Link{
+    color:#ffffff;
+}
+
+footer iframe {
+    width:400px;
+    height:350px;
+    max-width: 100%;
+
+}
+
+@media(max-width:900px){
+    .container{
+        padding: 0 40px;
+    }
+    main section.projects .container{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+main section.projects .container article{
+    margin:20px 0;
+}
+@media(max-width:740px){
+    footer{
+        flex-wrap:wrap;
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+
+
+
+}
